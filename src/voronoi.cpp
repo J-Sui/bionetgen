@@ -1619,7 +1619,7 @@ public:
 
             // check if line is longer than 1/3 of boxlength (we do not want this to
             // ensure that our RVE stays representative)
-            if (GetEdgeLength(iter_edges) / length_norm_fac > one_third * this->boxSize_[0])
+            if (GetEdgeLength(iter_edges) > one_third * this->boxSize_[0])
             {
               success = false;
               break;
